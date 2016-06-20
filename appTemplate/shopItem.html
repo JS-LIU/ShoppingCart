@@ -1,0 +1,12 @@
+<ul ng-repeat="shopItem in cartInfos">
+    <!--店铺名称-->
+    <li>
+        <input type="checkbox" ng-model="productItemCheck">
+        <span>我是店铺</span>
+    </li>
+    <!--商品-->
+    <li ng-repeat="productItem in shopItem" class="pl15">
+        <input type="checkbox" ng-checked="productItemCheck">
+        <span>我是商品</span>
+    </li>
+</ul>
