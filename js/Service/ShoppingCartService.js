@@ -17,7 +17,11 @@
 
             findWhere:{},
 
-            calcTotleMoney:{}
+            calcTotleMoney:{},
+
+            changeNumber:{},
+
+            increment:{}
 
         };
         //  添加属性方法
@@ -40,7 +44,7 @@
                 self(data.itemList,propObj);
 
             });
-
+            console.log(list);
             return list;
 
         };
@@ -93,13 +97,19 @@
 
                 if(flag){
 
-                    item.price += list[i].price;
+                    item.price += list[i].price * list[i].num;
 
                 }
 
             };
 
             return item.price;
+
+        }
+
+        shoppingCart.changeNumber = function(){
+
+
 
         }
 

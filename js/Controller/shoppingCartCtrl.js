@@ -15,10 +15,12 @@
 
                 price:0,
 
+                num:1,
+
                 check:false
             };
 
-            ShoppingCartService.addProp($scope.shoppingCart.shopList,{check:false,price:0});
+            ShoppingCartService.addProp($scope.shoppingCart.shopList,{check:false,price:0,num:1});
 
         });
 
@@ -82,5 +84,34 @@
             shoppingCart.price = ShoppingCartService.calcTotleMoney(shoppingCart,shoppingCart.shopList);
 
         };
+
+        //  商品数量变化
+        $scope.incrementQuantity = function(productItem,shopItem,shoppingCart){
+
+            productItem.num ++;
+
+            $scope.productItemNumChange(productItem,shopItem,shoppingCart);
+        };
+
+        //  商品数量变化
+        $scope.decrementQuantity = function(productItem,shopItem,shoppingCart){
+
+            productItem.num --;
+
+            $scope.productItemNumChange(productItem,shopItem,shoppingCart);
+        };
+
+        $scope.productItemNumChange = function(productItem,shopItem,shoppingCart){
+
+            if(productItem.check){
+
+                //  商店价格
+                shopItem.price = ShoppingCartService.calcTotleMoney(shopItem,shopItem.itemList,{check:true});
+
+                //  整个购物车价格
+                shoppingCart.price = ShoppingCartService.calcTotleMoney(shoppingCart,shoppingCart.shopList);
+
+            }
+        }
     };
 }());
