@@ -15,8 +15,6 @@
 
             getCartList:{},
 
-            findWhere:{},
-
             calcTotleMoney:{},
 
             changeNumber:{},
@@ -55,26 +53,6 @@
 
         };
 
-
-        shoppingCart.findWhere = function(list,obj){
-
-            for(var i = 0,len = list.length;i < len ;i++){
-
-                for(var prop in obj){
-
-                    if(list[i][prop] != obj[prop]){
-
-                        return list[i];
-
-                    }
-
-                }
-
-            };
-
-        };
-
-
         shoppingCart.calcTotleMoney = function(item,list,obj){
 
             item.price = 0;
@@ -104,12 +82,6 @@
             };
 
             return item.price;
-
-        }
-
-        shoppingCart.changeNumber = function(){
-
-
 
         }
 

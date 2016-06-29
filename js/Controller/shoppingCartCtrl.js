@@ -17,10 +17,12 @@
 
                 num:1,
 
-                check:false
+                check:false,
+
+                undelete:true
             };
 
-            ShoppingCartService.addProp($scope.shoppingCart.shopList,{check:false,price:0,num:1});
+            ShoppingCartService.addProp($scope.shoppingCart.shopList,{check:false,price:0,num:1,undelete:true});
 
         });
 
@@ -61,7 +63,7 @@
             shopItem.price = ShoppingCartService.calcTotleMoney(shopItem,shopItem.itemList,{check:true});
 
             //  整个购物车选择
-            shoppingCart.check = !ShoppingCartService.findWhere(shoppingCart.shopList,{check:true});
+            shoppingCart.check = HB.arrObj.isEmpty(HB.arrObj.findObjs(shoppingCart.shopList,{check:false}));
 
             //  整个购物车价格
             shoppingCart.price = ShoppingCartService.calcTotleMoney(shoppingCart,shoppingCart.shopList);
@@ -72,13 +74,13 @@
         $scope.productChange = function(productItem,shopItem,shoppingCart){
 
             //  商店选择
-            shopItem.check = !ShoppingCartService.findWhere(shopItem.itemList,{check:true});
+            shopItem.check = HB.arrObj.isEmpty(HB.arrObj.findObjs(shopItem.itemList,{check:false}));
 
             //  商店价格
             shopItem.price = ShoppingCartService.calcTotleMoney(shopItem,shopItem.itemList,{check:true});
 
             //  整个购物车选择
-            shoppingCart.check = !ShoppingCartService.findWhere(shoppingCart.shopList,{check:true});
+            shoppingCart.check = HB.arrObj.isEmpty(HB.arrObj.findObjs(shoppingCart.shopList,{check:false}));
 
             //  整个购物车价格
             shoppingCart.price = ShoppingCartService.calcTotleMoney(shoppingCart,shoppingCart.shopList);
@@ -113,5 +115,17 @@
 
             }
         }
+
+        $scope.deleteShopItem = function(shopItem,shoppingCart){
+
+            shopItem.undelete = false;
+
+            HB.arrObj.deleteObjs(shoppingCart.shopList,{undelete:false});
+
+            console.log(shoppingCart);
+
+            //  整个购物车价格
+            shoppingCart.price = ShoppingCartService.calcTotleMoney(shoppingCart,shoppingCart.shopList);
+        };
     };
 }());

@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/shoppingCart.css">
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+    <script src="bower_components/HB.js"></script>
     <title>shoppingCart</title>
 </head>
 <body ng-app="myApp">
@@ -16,25 +17,28 @@
         <!--店铺-->
         <ul class="ml15" ng-repeat="shopItem in shoppingCart.shopList">
             <!--店铺名称-->
-            <li>
+            <li ng-if="shopItem.undelete">
                 <input type="checkbox" ng-model="shopItem.check" ng-change="shopItemChange(shopItem,shoppingCart)">
                 <span>我是店铺</span>
                 <span class="ml50">价格：{{(shopItem.price / 100)}}</span>
+                <span class="ml50" ng-click="deleteShopItem(shopItem,shoppingCart)">删除</span>
             </li>
             <!--商品-->
-            <li ng-repeat="productItem in shopItem.itemList" class="ml30">
+            <li ng-repeat="productItem in shopItem.itemList" class="ml30" ng-if="productItem.undelete">
                 <input type="checkbox" ng-model="productItem.check" ng-change="productChange(productItem,shopItem,shoppingCart)">
                 <span>我是商品</span>
                 <span class="ml50">价格：{{(productItem.price / 100)}}</span>
                 <span class="ml30" ng-click="decrementQuantity(productItem,shopItem,shoppingCart)">-</span>
                 <input type="text" class="ml5 mr5" ng-model="productItem.num" ng-change="productItemNumChange(productItem,shopItem,shoppingCart)"/>
                 <span ng-click="incrementQuantity(productItem,shopItem,shoppingCart)">+</span>
+                <span class="ml50" ng-click="deleteProductItem(productItem,shopItem,shoppingCart)">删除</span>
             </li>
         </ul>
         <div>
             <input type="checkbox" ng-model="shoppingCart.check" ng-change="cartChange(shoppingCart)">
             <span>我是购物车</span>
             <span class="ml50">价格：{{(shoppingCart.price / 100)}}</span>
+            <span class="ml50" ng-click="deleteSelect(shoppingCart)">删除</span>
         </div>
     </div>
     <script src="js/Controller/shoppingCartCtrl.js"></script>
