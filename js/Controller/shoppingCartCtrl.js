@@ -122,8 +122,6 @@
 
             HB.arrObj.deleteObjs(shoppingCart.shopList,{undelete:false});
 
-            console.log(shoppingCart);
-
             //  整个购物车价格
             shoppingCart.price = ShoppingCartService.calcTotleMoney(shoppingCart,shoppingCart.shopList);
         };
