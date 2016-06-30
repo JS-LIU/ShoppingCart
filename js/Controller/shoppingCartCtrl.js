@@ -131,6 +131,8 @@
 
             shopItem.itemList = HB.arrObj.deleteObjs(shopItem.itemList,{undelete:false});
 
+            shopItem.undelete = !HB.arrObj.isEmpty(shopItem.itemList);
+
             shopItem.price = ShoppingCartService.calcTotleMoney(shopItem,shopItem.itemList,{check:true});
 
             shoppingCart.price = ShoppingCartService.calcTotleMoney(shoppingCart,shoppingCart.shopList);

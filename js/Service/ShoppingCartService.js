@@ -42,7 +42,7 @@
                 self(data.itemList,propObj);
 
             });
-            console.log(list);
+
             return list;
 
         };
