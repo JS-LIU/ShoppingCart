@@ -156,10 +156,7 @@ HB.arrObj = (function(){
 
         }
 
-        deletedList = newList;
-        console.log(deletedList);
-
-        return deletedList;
+        return newList;
 
     }
 

@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63453419-d40e-4b21-9032-3588e5f53b0b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower_components/HB.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/HB.js" afterPath="$PROJECT_DIR$/bower_components/HB.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Controller/shoppingCartCtrl.js" afterPath="$PROJECT_DIR$/js/Controller/shoppingCartCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Service/ShoppingCartService.js" afterPath="$PROJECT_DIR$/js/Service/ShoppingCartService.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shoppingCart.html" afterPath="$PROJECT_DIR$/shoppingCart.html" />
     </list>
     <ignored path="ShoppingCart.iws" />
@@ -31,8 +29,8 @@
       <file leaf-file-name="shoppingCart.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shoppingCart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.5">
-              <caret line="33" column="62" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="62" />
+            <state vertical-scroll-proportion="-14.321428">
+              <caret line="42" column="66" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -41,8 +39,8 @@
       <file leaf-file-name="shoppingCartCtrl.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/Controller/shoppingCartCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29131654">
-              <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.22865854">
+              <caret line="139" column="8" selection-start-line="139" selection-start-column="8" selection-end-line="139" selection-end-column="8" />
               <folding>
                 <element signature="e#0#38#0" expanded="false" />
               </folding>
@@ -54,7 +52,17 @@
         <entry file="file://$PROJECT_DIR$/js/Service/ShoppingCartService.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <caret line="59" column="43" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HB.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bower_components/HB.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -90,6 +98,7 @@
         <option value="$PROJECT_DIR$/appTemplate/shopItem.html" />
         <option value="$PROJECT_DIR$/js/Service/ShoppingCartService.js" />
         <option value="$PROJECT_DIR$/shoppingCart.html" />
+        <option value="$PROJECT_DIR$/bower_components/HB.js" />
         <option value="$PROJECT_DIR$/js/Controller/shoppingCartCtrl.js" />
       </list>
     </option>
@@ -102,7 +111,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1616" />
+    <option name="width" value="1612" />
     <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -130,6 +139,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -198,9 +208,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShoppingCart" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Shoppingcart" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bower_components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -307,7 +330,19 @@
       <option name="project" value="LOCAL" />
       <updated>1466409311438</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="shoppingcart totleprice">
+      <created>1467201639950</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1467201639950</updated>
+    </task>
+    <task id="LOCAL-00004" summary="HBbase">
+      <created>1467202147836</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1467202147836</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -322,11 +357,11 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1612" height="876" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25322166" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -360,7 +395,8 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
     <MESSAGE value="shoppingcart check" />
     <MESSAGE value="shoppingcart totleprice" />
-    <option name="LAST_COMMIT_MESSAGE" value="shoppingcart totleprice" />
+    <MESSAGE value="HBbase" />
+    <option name="LAST_COMMIT_MESSAGE" value="HBbase" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -735,34 +771,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/HB.js">
+    <entry file="file://$PROJECT_DIR$/js/Service/ShoppingCartService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6302521">
-          <caret line="184" column="29" selection-start-line="184" selection-start-column="19" selection-end-line="184" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="43" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/Service/ShoppingCartService.js">
+    <entry file="file://$PROJECT_DIR$/bower_components/HB.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shoppingCart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.5">
-          <caret line="33" column="62" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="62" />
+        <state vertical-scroll-proportion="-14.321428">
+          <caret line="42" column="66" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/Controller/shoppingCartCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29131654">
-          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.22865854">
+          <caret line="139" column="8" selection-start-line="139" selection-start-column="8" selection-end-line="139" selection-end-column="8" />
           <folding>
             <element signature="e#0#38#0" expanded="false" />
           </folding>

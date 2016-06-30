@@ -120,10 +120,38 @@
 
             shopItem.undelete = false;
 
-            HB.arrObj.deleteObjs(shoppingCart.shopList,{undelete:false});
+            shoppingCart.shopList = HB.arrObj.deleteObjs(shoppingCart.shopList,{undelete:false});
 
-            //  整个购物车价格
             shoppingCart.price = ShoppingCartService.calcTotleMoney(shoppingCart,shoppingCart.shopList);
         };
+
+        $scope.deleteProductItem = function(productItem,shopItem,shoppingCart){
+
+            productItem.undelete = false;
+
+            shopItem.itemList = HB.arrObj.deleteObjs(shopItem.itemList,{undelete:false});
+
+            shopItem.price = ShoppingCartService.calcTotleMoney(shopItem,shopItem.itemList,{check:true});
+
+            shoppingCart.price = ShoppingCartService.calcTotleMoney(shoppingCart,shoppingCart.shopList);
+
+        };
+
+        $scope.deleteSelect = function(shoppingCart){
+
+            shoppingCart.shopList = HB.arrObj.deleteObjs(shoppingCart.shopList,{check:true});
+
+            angular.forEach(shoppingCart.shopList,function(shopItem){
+
+                shopItem.itemList = HB.arrObj.deleteObjs(shopItem.itemList,{check:true});
+
+                shopItem.price = ShoppingCartService.calcTotleMoney(shopItem,shopItem.itemList,{check:true});
+
+            });
+
+            shoppingCart.price = ShoppingCartService.calcTotleMoney(shoppingCart,shoppingCart.shopList);
+
+        };
+
     };
 }());
